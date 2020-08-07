@@ -98,7 +98,7 @@ blacklist radeon
 Void Linux provides directories for kernel hooks in
 `/etc/kernel.d/{pre-install,post-install,pre-remove,post-remove}`.
 
-These hooks are used to update the boot menus for bootloaders like `grub`,
+These hooks are used to update the boot menus for bootloaders like `GRUB`,
 `gummiboot` and `lilo`.
 
 ### Install hooks

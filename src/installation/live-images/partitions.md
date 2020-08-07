@@ -21,7 +21,7 @@ The following sections will detail the options for partition configuration.
 It is recommended that you create an MBR partition table if you are using a BIOS
 boot system. This will limit the number of partitions you create to four.
 
-It is possible to use a GPT partition table on a BIOS system, but grub will
+It is possible to use a GPT partition table on a BIOS system, but GRUB will
 require a special partition to boot properly. This partition should be at the
 beginning of your disk and have a size of 1MB, with type `BIOS boot` (GUID
 `21686148-6449-6E6F-744E-656564454649`). Don't create any filesystem in it. GRUB
@@ -30,7 +30,7 @@ should install successfully.
 ## UEFI system notes
 
 UEFI users are recommended to create a GPT partition table. UEFI booting with
-grub also requires a special partition of the type `EFI System` with a `vfat`
+GRUB also requires a special partition of the type `EFI System` with a `vfat`
 filesystem mounted at `/boot/efi`. A reasonable size for this partition could be
 between 200MB and 1GB. With this partition setup during the live image
 installation, the installer should successfully set up the bootloader
@@ -55,7 +55,7 @@ On most modern systems, a separate `/boot` partition is no longer necessary to
 boot properly. If you choose to use one, note that Void does not remove old
 kernels after updates by default and also that the kernel tends to increase in
 size with each new version, so plan accordingly (e.g. `/boot` with one Linux 5.x
-`x86_64` kernel and grub occupies about 60MB).
+`x86_64` kernel and GRUB occupies about 60MB).
 
 ## Other partitions
 
